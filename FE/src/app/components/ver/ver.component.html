@@ -1,0 +1,25 @@
+
+<div class="title">
+    <h1>Mascota</h1>
+</div>
+
+<!-- <div *ngIf = "mascota != null" class="container"> -->
+
+<!-- Aquí se utiliza pipe async -->
+<div *ngIf = "mascota$ | async as mascota" class="container">
+    <mat-card class="card">
+        <mat-card-title>
+            <h2> {{mascota.nombre}} </h2>
+        </mat-card-title>
+        <mat-card-content>
+            <P><strong>ID: </strong> {{mascota.idmascota}} </P>
+            <P><strong>EDAD: </strong> {{mascota.edad}} </P>
+            <P><strong>RAZA: </strong> {{mascota.raza}} </P>
+            <P><strong>COLOR: </strong> {{mascota.color}} </P> 
+            <P><strong>PESO: </strong> {{mascota.peso}} </P>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listado" mat-raised-button>Regresar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

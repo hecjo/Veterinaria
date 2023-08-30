@@ -1,0 +1,27 @@
+
+table {
+    width: 100%;
+}
+
+td, th {
+    width: 15%;
+}
+
+mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.delete {
+    cursor: pointer;
+    color:red;
+}
+
+.edit {
+    cursor: pointer;
+    color:rgb(7, 172, 248);
+}
+
+.ver {
+    cursor: pointer;
+}
